@@ -1,5 +1,5 @@
 function data = linearoffset(data)
-%  LINEAROFFSET Corrects the linear-offset of the B-Scan.
+%  LINEAROFFSET Corrects the linear-offset of a B-Scan.
 %
 % 	 data = LINEAROFFSET(data) returns a matrix with the B-Scan data after
 %    applying a linear-offset filter correction. The filter considers the

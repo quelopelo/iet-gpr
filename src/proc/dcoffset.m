@@ -1,5 +1,5 @@
 function data = dcoffset(data)
-%  DCOFFSET Corrects the DC-offset of the B-Scan.
+%  DCOFFSET Corrects the DC-offset of a B-Scan.
 %
 % 	 data = DCOFFSET(data) returns a matrix with the B-Scan data after
 %    applying a DC-offset filter correction. The filter considers the last

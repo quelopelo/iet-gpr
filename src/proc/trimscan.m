@@ -1,7 +1,7 @@
 function [data, dataHeader] = trimscan(data, dataHeader, startPos, endPos)
 %  TRIMSCAN Trims a B-Scan between two positions.
 %
-% 	 [data, dataHeader] = trimscan(data, dataHeader, startPos, endPos) returns
+% 	 [data, dataHeader] = TRIMSCAN(data, dataHeader, startPos, endPos) returns
 %    a matrix (and a header) with the B-Scan between 'startPos' and 'endPos'.
 %    If the start position is not specified, 'startPos' is set equal to the
 %    beginning of the scan. Similarly, if the final position is not specified, 

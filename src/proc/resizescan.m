@@ -1,7 +1,7 @@
 function [data, dataHeader] = resizescan(data, dataHeader, horSize, verSize)
 %  RESIZESCAN Resizes a B-Scan to the specified size.
 %
-% 	 [data, dataHeader] = resizescan(data, dataHeader, horSize, verSize)
+% 	 [data, dataHeader] = RESIZESCAN(data, dataHeader, horSize, verSize)
 %    returns a matrix (and a header) with the B-Scan resized to 'horSize'
 %    (numOfColumns) by 'verSize' (samplesPerTrace).
 % 

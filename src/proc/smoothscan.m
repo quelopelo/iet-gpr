@@ -1,7 +1,7 @@
 function data = smoothscan(data, dataHeader, horScale, verScale)
 %  SMOOTHSCAN Reduces the noise of a B-Scan.
 % 
-%    data = smoothscan(data, dataHeader, horScale, verScale) returns a
+%    data = SMOOTHSCAN(data, dataHeader, horScale, verScale) returns a
 %    matrix with the B-Scan after applying a noise reduction filter.
 % 
 %    REQUIRED INPUT:

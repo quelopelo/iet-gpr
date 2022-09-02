@@ -1,7 +1,7 @@
 function data = removetrend(data, cvFactor)
 %  REMOVETREND Removes the trend from a B-Scan.
 % 
-%    data = removetrend(data, cvFactor) returns a matrix with the B-Scan
+%    data = REMOVETREND(data, cvFactor) returns a matrix with the B-Scan
 %    after removing the trend of the data. The estimation of the trend is
 %    done considering the mean and subtracting the standard deviation
 %    multiplied by 'cvFactor' (see code). Thus, if cv == 0, the algorithm
