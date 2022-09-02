@@ -1,15 +1,13 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
-title: IET GPR
-message: >-
-  If you use this software, please cite it using the
-  metadata from this file.
+message: "If you use this software, please cite it using these metadata."
 type: software
+title: "IET GPR"
+abstract: "MATLAB function set for importing, processing, and plotting data from a GSSI-StructureScan Mini GPR"
+version: 1.0.0
+date-released: "2022-09-02"
 authors:
-  - email: ldaguiar@fing.edu.uy
-    affiliation: MSc. Eng.
+  - affiliation: "MSc. Eng."
     given-names: Domenech
     family-names: Leandro
-    orcid: 'https://orcid.org/0000-0002-6488-084X'
+    orcid: "https://orcid.org/0000-0002-6488-084X"
+repository-code: "https://github.com/quelopelo/iet-gpr"
