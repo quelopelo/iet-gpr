@@ -130,7 +130,16 @@ There are two ways of using the IET GPR set of functions.
 
 ## Possible future works
 
-xxx
+The program is in an early stage, so there is room for many improvements.
+
+- Add support for other ground penetrating radars and antennas.
+- Add processing functions, such as a dewow, a band-pass filter or a process to remove bad traces.
+- Add gain functions, especially one that uses a numerical physical model to determine the attenuation as a function of the relative permittivity of the medium.
+- Add other focusing or migration techniques.
+- Add support for importing, processing and visualizing 3D scans.
+- Add a focusing or migration technique for 3D scans.
+- Add a graphical user interface (GUI).
+- Rewrite the program in an open and widely used programming language, such as Python.
 
 ## Licence and citation
 
