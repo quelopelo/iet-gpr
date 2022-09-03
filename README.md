@@ -121,7 +121,7 @@ There are two ways of using the IET GPR set of functions.
 
 [**safmat1**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmat1.m) – Returns the SAFT coefficients matrix corresponding to index *k*, considering a null separation between the sender and the receiver.
 
-[**saftmat2**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmat2.m) – Returns the SAFT coefficients matrix corresponding to index *k*, considering a separation between the sender and the receiver 'sep'
+[**saftmat2**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmat2.m) – Returns the SAFT coefficients matrix corresponding to index *k*, considering a separation between the sender and the receiver *sep*.
 
 [**saftmats**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmats.m) – Returns a cell with the SAFT coefficients matrixes.
 
