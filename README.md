@@ -100,7 +100,7 @@ There are two ways of using the IET GPR set of functions.
 - Syntax: `data = iadgain1(data, gainFactor)`
 - Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-[**iadgain2**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain2.m) – Applies an inverse amplitude decay to the data, based on the curve $y=a \frac{(b x)}{b x + 1} e^{-c x} + d$.
+[**iadgain2**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain2.m) – Applies an inverse amplitude decay to the data, based on the curve $y=a \frac{b x}{b x + 1} e^{-c x} + d$.
 
 - Syntax: `data = iadgain2(data, gainFactor)`
 - Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
