@@ -132,3 +132,9 @@ There is two ways of using the IET GPR set of functions.
 ## Possible future works
 
 xxx
+
+### Licence and citation
+
+The code is distributed under a [GNU-GPL 3.0 license](https://github.com/quelopelo/iet-gpr/blob/main/LICENCE.md).
+
+If you use this software, please cite it using [these metadata](https://github.com/quelopelo/iet-gpr/blob/main/CITATION.cff).
