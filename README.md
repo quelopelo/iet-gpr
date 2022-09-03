@@ -133,7 +133,7 @@ There is two ways of using the IET GPR set of functions.
 
 xxx
 
-### Licence and citation
+## Licence and citation
 
 The code is distributed under a [GNU-GPL 3.0 license](https://github.com/quelopelo/iet-gpr/blob/main/LICENCE.md).
 
