@@ -20,7 +20,7 @@ All functions include a help text that can be consulted using the command `help`
 
 ## Installation
 
-There is two ways of using the IET GPR set of functions.
+There are two ways of using the IET GPR set of functions.
 
 1. Install the toolbox located in the [dist](https://github.com/quelopelo/iet-gpr/tree/main/dist) folder. This [official link](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html) contains additional information about the installation and management of toolboxes. This method adds the functions to the MATLAB path, so that they are built into the IDE each time MATLAB is started.
 
