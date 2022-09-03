@@ -7,7 +7,7 @@ version: 1.0.0
 date-released: "2022-09-02"
 authors:
   - affiliation: "MSc. Eng."
-    given-names: Domenech
-    family-names: Leandro
+    given-names: Leandro
+    family-names: Domenech
     orcid: "https://orcid.org/0000-0002-6488-084X"
 repository-code: "https://github.com/quelopelo/iet-gpr"
