@@ -29,103 +29,151 @@ There are two ways of using the IET GPR set of functions.
 
 ### Load GPR data (input)
 
-[**readdzt**](https://github.com/quelopelo/iet-gpr/blob/main/src/io/readdzt.m) – Read and convert GSSI StructureScan Mini dzt format.
+<details><summary>See functions</summary>
+  
+  ---
 
-- Syntax: `[data, header] = readdzt(filename)`
-- Application: see [Example 1](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example1.html)
+  [**readdzt**](https://github.com/quelopelo/iet-gpr/blob/main/src/io/readdzt.m) – Read and convert GSSI StructureScan Mini dzt format.
+
+  - Syntax: `[data, header] = readdzt(filename)`
+  - Application: see [Example 1](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example1.html)
+  
+  ---
+  
+</details>
 
 ### Visualize data (output)
 
-[**plotascan**](https://github.com/quelopelo/iet-gpr/blob/main/src/io/plotascan.m) – Plots a series of A-Scans of the data between two positions.
+<details><summary>See functions</summary>
 
-- Syntax: `fig = plotascan(data, header, startPos, endPos, relPerm)`
-- Application: see [Example 1](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example1.html)
+  ---
+  
+  [**plotascan**](https://github.com/quelopelo/iet-gpr/blob/main/src/io/plotascan.m) – Plots a series of A-Scans of the data between two positions.
 
-[**plotbscan**](https://github.com/quelopelo/iet-gpr/blob/main/src/io/plotbscan.m) – Plots a B-Scan of the data.
+  - Syntax: `fig = plotascan(data, header, startPos, endPos, relPerm)`
+  - Application: see [Example 1](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example1.html)
 
-- Syntax: `fig = plotbscan(data, header, relPerm)`
-- Application: see [Example 1](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example1.html)
+  [**plotbscan**](https://github.com/quelopelo/iet-gpr/blob/main/src/io/plotbscan.m) – Plots a B-Scan of the data.
+
+  - Syntax: `fig = plotbscan(data, header, relPerm)`
+  - Application: see [Example 1](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example1.html)
+  
+  ---
+  
+</details>
 
 ### Process data
 
-[**dcoffset**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/dcoffset.m) – Corrects the DC-offset of a B-Scan data.
+<details><summary>See functions</summary>
+  
+  ---
 
-- Syntax: `data = dcoffset(data)`
-- Application: see [linearoffset](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/linearoffset.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**dcoffset**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/dcoffset.m) – Corrects the DC-offset of a B-Scan data.
 
-[**linearoffset**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/linearoffset.m) – Corrects the linear-offset of a B-Scan data.
+  - Syntax: `data = dcoffset(data)`
+  - Application: see [linearoffset](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/linearoffset.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-- Syntax: `data = linearoffset(data)`
-- Application: see [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**linearoffset**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/linearoffset.m) – Corrects the linear-offset of a B-Scan data.
 
-[**removetrend**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/removetrend.m) – Removes the trend from a B-Scan data.
+  - Syntax: `data = linearoffset(data)`
+  - Application: see [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-- Syntax: `data = removetrend(data, cvFactor)`
-- Application: see [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**removetrend**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/removetrend.m) – Removes the trend from a B-Scan data.
 
-[**smoothscan**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/smoothscan.m) – Reduces the noise (or smooths) of a B-Scan data.
+  - Syntax: `data = removetrend(data, cvFactor)`
+  - Application: see [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-- Syntax: `data = smoothscan(data, dataHeader, horScale, verScale)`
-- Application: see [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**smoothscan**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/smoothscan.m) – Reduces the noise (or smooths) of a B-Scan data.
 
-[**trimscan**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/trimscan.m) – Trims a B-Scan data between two positions.
+  - Syntax: `data = smoothscan(data, dataHeader, horScale, verScale)`
+  - Application: see [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-- Syntax: `[data, dataHeader] = trimscan(data, dataHeader, startPos, endPos)`
-- Application: see [resizescan](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/resizescan.m) in [Example 3](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example3.html)
+  [**trimscan**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/trimscan.m) – Trims a B-Scan data between two positions.
 
-[**resizescan**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/resizescan.m) – Resizes a B-Scan data to the specified size.
+  - Syntax: `[data, dataHeader] = trimscan(data, dataHeader, startPos, endPos)`
+  - Application: see [resizescan](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/resizescan.m) in [Example 3](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example3.html)
 
-- Syntax: `[data, dataHeader] = resizescan(data, dataHeader, horSize, verSize)`
-- Application: see [Example 3](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example3.html)
+  [**resizescan**](https://github.com/quelopelo/iet-gpr/blob/main/src/proc/resizescan.m) – Resizes a B-Scan data to the specified size.
+
+  - Syntax: `[data, dataHeader] = resizescan(data, dataHeader, horSize, verSize)`
+  - Application: see [Example 3](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example3.html)
+  
+  ---
+  
+</details>
 
 ### Apply a gain function
 
-[**lingain**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/lingain.m) – Applies a custom linear gain to the data.
+<details><summary>See functions</summary>
+  
+  ---
 
-- Syntax: `data = lingain(data, linFactor)`
-- Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**lingain**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/lingain.m) – Applies a custom linear gain to the data.
 
-[**expgain**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/expgain.m) – Applies a custom exponencial gain to the data.
+  - Syntax: `data = lingain(data, linFactor)`
+  - Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-- Syntax: `data = expgain(data, expFactor)`
-- Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**expgain**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/expgain.m) – Applies a custom exponencial gain to the data.
 
-[**agcgain**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/agcgain.m) – Applies an automatic gain control to the data.
+  - Syntax: `data = expgain(data, expFactor)`
+  - Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-- Syntax: `data = agcgain(data, windowSize, gainFactor)`
-- Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**agcgain**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/agcgain.m) – Applies an automatic gain control to the data.
 
-[**iadgain1**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) – Applies an inverse amplitude decay to the data, based on the curve $y=a e^{-b x} + c$.
+  - Syntax: `data = agcgain(data, windowSize, gainFactor)`
+  - Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-- Syntax: `data = iadgain1(data, gainFactor)`
-- Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**iadgain1**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) – Applies an inverse amplitude decay to the data, based on the curve $y=a e^{-b x} + c$.
 
-[**iadgain2**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain2.m) – Applies an inverse amplitude decay to the data, based on the curve $y=a \frac{b x}{b x + 1} e^{-c x} + d$.
+  - Syntax: `data = iadgain1(data, gainFactor)`
+  - Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
 
-- Syntax: `data = iadgain2(data, gainFactor)`
-- Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  [**iadgain2**](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain2.m) – Applies an inverse amplitude decay to the data, based on the curve $y=a \frac{b x}{b x + 1} e^{-c x} + d$.
+
+  - Syntax: `data = iadgain2(data, gainFactor)`
+  - Application: see [iadgain1](https://github.com/quelopelo/iet-gpr/blob/main/src/gain/iadgain1.m) in [Example 2](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example2.html)
+  
+  ---
+  
+</details>
 
 ### Migrate using SAFT algorithm
 
-[**saftproc**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftproc.m) – Returns a matrix (and a header) with the results of the SAFT migration process.
+<details><summary>See functions</summary>
+  
+  ---
 
-- Syntax: `[saft, saftHeader] = saftproc(data, dataHeader, relPerm, sep, antPattern)`
-- Application: see [Example 3](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example3.html)
+  [**saftproc**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftproc.m) – Returns a matrix (and a header) with the results of the SAFT migration process.
 
-[**saftpost**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftpost.m) – Post-processes the results of the SAFT algorithm (trim or mirror the edges).
+  - Syntax: `[saft, saftHeader] = saftproc(data, dataHeader, relPerm, sep, antPattern)`
+  - Application: see [Example 3](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example3.html)
 
-- Syntax: `[saft, saftHeader] = saftpost(saft, saftHeader, mirror)`
-- Application: see [Example 3](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example3.html)
+  [**saftpost**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftpost.m) – Post-processes the results of the SAFT algorithm (trim or mirror the edges).
+
+  - Syntax: `[saft, saftHeader] = saftpost(saft, saftHeader, mirror)`
+  - Application: see [Example 3](https://htmlpreview.github.io/?https://github.com/quelopelo/iet-gpr/blob/main/docs/example3.html)
+  
+  ---
+  
+</details>
 
 ### Auxiliary functions
 
-[**safmat1**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmat1.m) – Returns the SAFT coefficients matrix corresponding to index *k*, considering a null separation between the sender and the receiver.
+<details><summary>See functions</summary>
+  
+  ---
 
-[**saftmat2**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmat2.m) – Returns the SAFT coefficients matrix corresponding to index *k*, considering a separation between the sender and the receiver *sep*.
+  [**safmat1**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmat1.m) – Returns the SAFT coefficients matrix corresponding to index *k*, considering a null separation between the sender and the receiver.
 
-[**saftmats**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmats.m) – Returns a cell with the SAFT coefficients matrixes.
+  [**saftmat2**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmat2.m) – Returns the SAFT coefficients matrix corresponding to index *k*, considering a separation between the sender and the receiver *sep*.
 
-[**linearcoef**](https://github.com/quelopelo/iet-gpr/blob/main/src/utils/linearcoef.m) – Returns the square of the linear approximation coefficient.
+  [**saftmats**](https://github.com/quelopelo/iet-gpr/blob/main/src/saft/saftmats.m) – Returns a cell with the SAFT coefficients matrixes.
+
+  [**linearcoef**](https://github.com/quelopelo/iet-gpr/blob/main/src/utils/linearcoef.m) – Returns the square of the linear approximation coefficient.
+  
+  ---
+  
+</details>
 
 ## Possible future works
 
